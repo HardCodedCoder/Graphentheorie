@@ -1,10 +1,17 @@
 package at.fhburgenland;
 
 import java.io.Console;
+import java.util.ArrayList;
+import java.util.List;
 
+/**
+ * Main class of the application. Creates a sample graph and runs the GraphCalculationService.
+ */
 public class Main {
     public static void main(String[] args) {
         Graph graph = createSampleGraph();
+        GraphCalculationService graphCalculationService = new GraphCalculationService(graph);
+        graphCalculationService.runService();
     }
 
     public static Graph createSampleGraph() {
