@@ -98,7 +98,6 @@ public class Graph {
     }
 
     public Map<Integer, String> getNodeLabelMap() {
-        // TODO: Return only deep copy of nodeLabelMap.
         return this.nodeLabelMap;
     }
 }

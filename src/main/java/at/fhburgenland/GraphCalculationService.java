@@ -74,7 +74,12 @@ public class GraphCalculationService implements Service {
         System.out.println("Shortest distance from S to Z: " + distanceToZ);
         System.out.print("Shortest path from S to Z: ");
         for (String label : pathLabels) {
-            System.out.print(label + "->");
+            if(!label.equals("Z")){
+                System.out.print(label + "->");
+            } else {
+                System.out.print(label);
+            }
+
         }
     }
 
